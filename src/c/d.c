@@ -63,6 +63,8 @@ http://multibandtexture.recherche.usherbrooke.ca/normalized_brodatz_more.html
 
 */
 
+#define _USE_MATH_DEFINES    // to make sure MSVC will load the M_PI define, among others
+
 #include <stdio.h>
 #include <string.h> // strncat
 #include <stdlib.h> // malloc
