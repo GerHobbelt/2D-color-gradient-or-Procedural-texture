@@ -80,7 +80,7 @@ double TwoPi=2.0*M_PI;
 double  DisplayAspectRatio  = 1.0; // https://en.wikipedia.org/wiki/Aspect_ratio_(image)
 
 // size of virtual 2D array of pixels
-// each piexel has a RGB color
+// each pixel has a RGB color
 int iWidth ; // 
 int iHeight = 600; // 
 
@@ -237,7 +237,7 @@ output of carg is:
 -  argument also called phase angle) of complex number z, with a branch cut along the negative real axis.
 - in radians from -pi to pi
 
-modification tranlates range from [-pi, pi] to  [0 ,2*pi]
+modification translates range from [-pi, pi] to  [0 ,2*pi]
 
 */
 double cargm(double complex z)
@@ -488,7 +488,7 @@ double GiveLWaveInverted(const double position){
 double GiveSine(const double position){
 	
 	// the commensts by P Kovesi
-	// my values are slightly changed to get similar vusual effect
+	// my values are slightly changed to get similar visual effect
 	double angle = position*2.0*M_PI; // input of the sin function is an angle in radians in range [0, 2*Pi]
 	//double f = iWidth/4.0; // frequency: The wavelength of the sine wave is set at 8 pixels 
 	double s = (1.0+ sin(angle))/2.0; // wave range from [-1,1] to [0,1]
@@ -502,8 +502,8 @@ double GiveSine(const double position){
 
 double GiveCosine(const double position){
 	
-	// the commensts by P Kovesi
-	// my values are slightly changed to get similar vusual effect
+	// the comments by P Kovesi
+	// my values are slightly changed to get similar visual effect
 	double angle = position*2.0*M_PI; // input of the sin function is an angle in radians in range [0, 2*Pi]
 	//double f = iWidth/4.0; // frequency: The wavelength of the sine wave is set at 8 pixels 
 	double s = (1.0+cos(angle))/2.0; // wave range from [-1,1] to [0,1]
@@ -740,7 +740,7 @@ int FillArray (unsigned char A[] , int n){
 
 
 
-// --------------- save dynamic "A" array of uinsigned char to the binary ppm file ( P6 ) --------------------------------
+// --------------- save dynamic "A" array of unsigned char to the binary ppm file ( P6 ) --------------------------------
 int SaveArray2PPM (unsigned char A[], size_t ASize,   int n)
 {
 
